@@ -3,14 +3,14 @@
 # git archive --format=tar --prefix=%{name}-%{version}/ %{version} | xz > ~/%{name}-%{version}.tar.xz
 
 Name:		arm-image-installer
-Version:	2.16
-Release:	1%{?dist}
+Version:	3.0
+Release:	1
 Summary:	Writes binary image files to any specified block device
 License:	GPLv2+
 Url:		https://pagure.io/arm-image-installer
 
 BuildArch:	noarch
-Source0:	%{name}-%{version}.tar.xz
+Source0:	https://pagure.io/arm-image-installer/archive/arm-image-installer-%{version}/arm-image-installer-arm-image-installer-%{version}.tar.gz
 
 Provides:	fedora-arm-installer < 2.5
 Requires:	e2fsprogs
@@ -26,7 +26,7 @@ destination block device should then be selected for final installation.
 
 
 %prep
-%autosetup
+%autosetup -p1 -n %{name}-%{name}-%{version}
 
 %build
 echo "skipping..."
