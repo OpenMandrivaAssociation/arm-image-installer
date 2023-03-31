@@ -4,7 +4,7 @@
 
 Name:		arm-image-installer
 Version:	3.4
-Release:	1
+Release:	2
 Summary:	Writes binary image files to any specified block device
 License:	GPLv2+
 Url:		https://pagure.io/arm-image-installer
