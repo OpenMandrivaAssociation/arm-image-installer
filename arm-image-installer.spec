@@ -27,7 +27,7 @@ destination block device should then be selected for final installation.
 
 
 %prep
-%autosetup -p1 -n %{name}-%{name}-%{version}
+%autosetup -p1 -n %{name}-%{version}
 
 %build
 echo "skipping..."
