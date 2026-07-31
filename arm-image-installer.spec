@@ -3,7 +3,7 @@
 # git archive --format=tar --prefix=%{name}-%{version}/ %{version} | xz > ~/%{name}-%{version}.tar.xz
 
 Name:		arm-image-installer
-Version:	5.3
+Version:	5.4
 Release:	1
 Summary:	Writes binary image files to any specified block device
 License:	GPLv2+
